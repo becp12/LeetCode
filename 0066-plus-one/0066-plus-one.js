@@ -25,7 +25,7 @@
 // // [1, 2, 3, 4, 5, 6]
 
 var plusOne = function(digits) {
-    let str = digits.join("")
-    let arr = Array.from(String(BigInt(str) + BigInt(1)), Number)
+    const str = digits.join("")
+    const arr = Array.from(String(BigInt(str) + BigInt(1)), Number)
     return arr;
 };

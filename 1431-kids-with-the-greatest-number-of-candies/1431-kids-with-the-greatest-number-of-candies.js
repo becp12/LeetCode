@@ -15,10 +15,8 @@ var kidsWithCandies = function(candies, extraCandies) {
     
     for (let i = 0; i < candies.length; i++) {
         let currentCandies = candies[i] + extraCandies;
-        // the below will print true or false without an if...else statement
         result.push(currentCandies >= maxCandies)
         
-        // less efficient
         // if (currentCandies >= maxCandies) {
         //     result.push(true);
         // } else {

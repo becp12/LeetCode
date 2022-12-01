@@ -15,15 +15,14 @@ var kidsWithCandies = function(candies, extraCandies) {
     
     for (let i = 0; i < candies.length; i++) {
         let currentCandies = candies[i] + extraCandies;
-        // if (i === 0) {
+        result.push(currentCandies >= maxCandies)
+        // if (currentCandies >= maxCandies) {
         //     result.push(true);
         // } else {
-            if (currentCandies >= maxCandies) {
-                result.push(true);
-            } else {
-                result.push(false);
-            }
+        //     result.push(false);
         // }
     }
+    
+    //
     return result;
 };
